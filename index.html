@@ -1,0 +1,60 @@
+<html>
+<head>
+        <!-- importer le fichier de style -->
+<link rel="stylesheet" href="style.css"  />
+
+<title>Sign in </title>
+<script language="javascript">
+  function verif()
+  {
+  if(f.T1.value.length>10 || isNaN(f.T1.value) || f.T1.value=="")
+  {	alert("Username non correct");
+     return false ;
+  }
+  if(f.T2.value.length<8 || f.T2.value=="")
+  {	alert("mdp non correct");
+     return false ;
+  }
+  }
+  
+  
+  
+  </script>
+</head>
+    <body>
+        <div id="container">
+    
+            
+            <form name="f" action="Succes.html" method="POST" onsubmit="return verif()">
+                <h1>Connexion</h1>
+                
+              <label>
+                <div align="left"><b>Nom d'utilisateur : </b></div>
+                </label>
+              
+                <label>
+                <div align="left"><b>
+                  <input type="text" id="inputs" placeholder="Entrer le nom d'utilisateur" name="T1" />
+                  <br />
+                </label>
+                 
+                <label>
+                  <div align="left"><b>Mot de passe : </b></div>
+                  </label>
+                
+                  <label>
+                  <div align="left" ><b>
+                    <input type="password" id="inputs" placeholder="Entrer le Mot de passe" name="T2" />
+                    <br />
+                    
+                  </label>
+                
+                  <div align="left">
+                  
+                    <input type="submit" id='submit' value='LOGIN'  >
+                    
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>
